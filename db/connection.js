@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const mongoURI = process.env.DATABASE_URL
+
 //   process.env.DATABASE_URL === `production`
 //   ? process.env.DATABASE_URL
 //   :`mongodb://localhost/online-store`;
