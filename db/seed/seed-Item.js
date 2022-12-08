@@ -1,8 +1,8 @@
-const Item = require('../models/Item.js')
-const Comment = require('../models/Comment.js')
+const Item = require('../../models/Item');
+const Comment = require('../../models/Comment');
 
 
-const itemRaw = require('../data/itemRaw.json')
+const itemRaw = require('../data/itemRaw.json');
 const commentRaw = require('../data/commentRaw.json');
 
 const itemData = itemRaw.map(item => {
