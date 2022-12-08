@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const mongoURI = process.env.DATABASE_URL
-  process.env.NODE_ENV === `production`
-  ? process.env.DATABASE_URL
-  :`mongodb://localhost/online-store`;
+
+//   process.env.NODE_ENV === `production`
+//   ? process.env.DATABASE_URL
+//   :`mongodb://localhost/online-store`;
 
 
 // Connection
