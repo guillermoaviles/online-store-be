@@ -1,6 +1,30 @@
 [
     {
-    "user": ,
-    "body": 
+        "user": "helloWorld82",
+        "body": "Looks like a great price!"
+    },
+    {
+        "user": "hiyaWorld22",
+        "body": "Is this item still available?"
+    },
+    {
+        "user": "curiousHippo",
+        "body": "Wow, this is amazing!"
+    },
+    {
+        "user": "lazyPanda12",
+        "body": "How can I get this?"
+    },
+    {
+        "user": "undecidedBird77",
+        "body": "I am not sure if this will fit my nest!"
+    },
+    {
+        "user": "busyBee99",
+        "body": "Do I really need this?"
+    },
+    {
+        "user": "lovelyLion18",
+        "body": "Hmmm, I think there is a better price"
     }
-]
+    ]
