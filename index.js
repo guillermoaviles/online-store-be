@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
 // Start Controllers
 
 // Items Controller
-const itemsController = require('./controllers/items');
-app.use('/api/online-store/', itemsController);
+// const itemsController = require('./controllers/items');
+// app.use('/api/online-store/', itemsController);
 
-// Comments Controller
-const commentsController = require('./controllers/comments');
-app.use('/api/online-store/', commentsController);
+// // Comments Controller
+// const commentsController = require('./controllers/comments');
+// app.use('/api/online-store/', commentsController);
 
 
 // End Controllers

@@ -8,3 +8,4 @@ Item.deleteMany({}).then(() => {
         console.log(items)
     })
 })
+
