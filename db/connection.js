@@ -7,6 +7,8 @@ const mongoURI = process.env.DATABASE_URL
   ? process.env.DATABASE_URL
   :`mongodb://localhost/online-store`;
 
+
+// Connection
 mongoose
   .connect(mongoURI, {
     useNewUrlParser: true,
