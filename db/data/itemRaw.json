@@ -1,9 +1,38 @@
 [
     {
-    "title": ,
-    "description": ,
-    "images": ,
-    "price": ,
+    "title": "Nintendo Switch",
+    "description": "A gaming console you can play at home and on-the-go, so you get more time to play the games you love",
+    "images": "https://i.imgur.com/hD3UHlZ.jpg",
+    "price": 349.99
+    },
+    {
+        "title": "LEGO Marvel Wolverine",
+        "description": "Standing over 4.5 in. (12 cm) tall, the highly posable mech inspires endless imaginative role play and, when the day battles are over, can be displayed in a bedroom",
+        "images": "https://i.imgur.com/GQXRzd3.jpg",
+        "price": 7.99
+    },
+    {
+        "title": "Just Dance 2023 Switch",
+        "description": "Spend more time dancing and less time searching thanks to a new, more modern, and intuitive user interface. Everything is one click away: playlists, game modes and songs!",
+        "images": "https://i.imgur.com/hxYrf91.jpg",
+        "price": "24.99"
+    },
+    {
+        "title": "LG Gram Laptop",
+        "description": "Work diligently with a wide, non-reflective 14” display and marvel at stunning graphics, even in bright conditions.",
+        "images": "https://i.imgur.com/oCRMj92.jpg",
+        "price": 1499.99,
+    },
+    {
+        "title": "Squishmallows Travel Set",
+        "description": "Makes a great travel bag and inside it contains the Squishmallows plush mini backpack with a 3-inch zipper on the back, easy-carry top handle, and two adjustable shoulder straps that will make the perfect accessory to any person's wardrobe",
+        "images": "https://i.imgur.com/N3UNGPv.png",
+        "price": "39.99"
+    },
+    {
+        "title": "Breville Barista Pro Espresso Machine",
+        "description": "The Breville Barista Pro delivers third wave specialty coffee at home with a single touch as the built in grinder with dose control delivers the right amount of coffee on demand for maximum flavor.",
+        "images": "https://i.imgur.com/RrswGPT.jpg",
+        "price": 679.99
     }
-
 ]
