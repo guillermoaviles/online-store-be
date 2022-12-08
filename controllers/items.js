@@ -38,7 +38,7 @@ router.delete("/deleteItem/:id", async (req, res, next) => {
   try {
     const deleteItem = await Item.findOneAndDelete({ _id: req.params.id });
   } catch (err) {
-    next(err);
+    next(err)
   }
 });
 
