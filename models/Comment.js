@@ -6,9 +6,17 @@ const Schema = mongoose.Schema;
 // Comment Schema Model
 const commentSchema = new Schema(
     {
-        user: String,
-        body: String
-    });
+        user: {
+            type: String,
+            default: "anonymous"
+        },
+        body: String,
+        item: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Item"
+        }
+    }
+);
 
 module.exports = mongoose.model('Comment', commentSchema);
 
