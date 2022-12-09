@@ -7,7 +7,8 @@ const Schema = mongoose.Schema;
 const commentSchema = new Schema(
     {
         title: String,
-        extract: String
+        user: String,
+        body: String
     });
 
 module.exports = mongoose.model('Comment', commentSchema);

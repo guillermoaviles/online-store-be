@@ -1,10 +1,14 @@
 const express = require("express");
-const Item = require("../models/Item");
 const router = express.Router();
+
+const Item = require("../models/Item");
+const Comment = require('../models/Comment')
+
+
 
 router.get("/items", async (req, res, next) => {
   try {
-    const item = await Item.find({});
+    const item = await Item.find({}).populate('comments');
     res.json(item);
   } catch (err) {
     next(err);
