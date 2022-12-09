@@ -4,8 +4,6 @@ const router = express.Router();
 const Item = require("../models/Item");
 const Comment = require('../models/Comment')
 
-
-
 router.get("/items", async (req, res, next) => {
   try {
     const item = await Item.find({}).populate('comments');
@@ -17,7 +15,7 @@ router.get("/items", async (req, res, next) => {
 
 router.post("/newItem", async (req, res, next) => {
   try {
-    const newItem = await Item.create(req.body);
+    const newItem = await (await Item.create(req.body)).populate('comments');
     res.status(201).json(newItem);
   } catch (err) {
     next(err);
