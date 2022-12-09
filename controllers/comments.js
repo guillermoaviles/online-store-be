@@ -1,6 +1,8 @@
 const express = require("express");
-const Comment = require("../models/Comment");
+
 const router = express.Router();
+const Comment = require("../models/Comment");
+
 
 router.get("/comments/:id", async (req, res, next) => {
   try {
@@ -31,3 +33,4 @@ router.delete("/deleteComment/:id", async (req, res, next) => {
 });
 
 module.exports = router;
+
