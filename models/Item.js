@@ -9,10 +9,6 @@ const itemSchema = new Schema(
         description: String,
         images: String,
         price: Number,
-        comments: [{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Comment"
-        }]
     }
 );
 
