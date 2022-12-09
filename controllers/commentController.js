@@ -2,10 +2,20 @@ const express = require("express");
 const Comment = require("../models/Comment");
 const router = express.Router();
 
+
+router.get("/comments", async (req, res, next) => {
+  try {
+    const comments = await Comment.find({});
+    res.json(comments);
+  } catch (err) {
+    next(err);
+  }
+});
+
 router.get("/comments/:id", async (req, res, next) => {
   try {
-    const comment = await Comment.find({item: req.params.id});
-    res.json(comment);
+    const comments = await Comment.find({item: req.params.id});
+    res.json(comments);
   } catch (err) {
     next(err);
   }
