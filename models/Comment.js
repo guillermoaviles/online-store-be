@@ -1,4 +1,5 @@
 const mongoose = require('../db/connection');
+
 const Schema = mongoose.Schema;
 
 
@@ -9,7 +10,11 @@ const commentSchema = new Schema(
             type: String,
             default: "anonymous"
         },
-        body: String
+        body: String,
+        item: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Item"
+        }
     }
 );
 
