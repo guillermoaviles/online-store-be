@@ -6,7 +6,7 @@ let mongoURI = ""
 if (process.env.DB_URL === "production") {
   mongoURI = process.env.DB_URL;
 } else {
-  mongoURI = "mongodb://localhost/online-store";
+  mongoURI = process.env.DB_URL;
 }
 
 // Connection
