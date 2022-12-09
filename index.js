@@ -4,7 +4,7 @@ const cors = require('cors')
 
 // Instantiate express
 const app = express();
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 8080);
 
 // Middleware
 app.use(express.json());
