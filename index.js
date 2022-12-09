@@ -20,13 +20,12 @@ app.get('/', (req, res) => {
 
 // Start Controllers
 
-// Items Controller
 const itemsController = require('./controllers/itemController');
 app.use('/api/online-store/', itemsController);
 
-// // Comments Controller
-// const commentsController = require('./controllers/comments');
-// app.use('/api/online-store/', commentsController);
+
+const commentsController = require('./controllers/commentController');
+app.use('/api/online-store/', commentsController);
 
 
 // End Controllers
@@ -35,6 +34,7 @@ app.use((err, req, res, next) => {
     const message = err.message || 'Internal Server Error'
     res.status(statusCode).send(message)
 })
+
 // Start Server
 app.listen(app.get('port'), () => {
 	console.log(`✅ PORT: ${app.get('port')} 🌟`);
