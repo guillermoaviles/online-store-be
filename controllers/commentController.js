@@ -23,6 +23,7 @@ router.get("/comments/:id", async (req, res, next) => {
 
 router.post("/newComment/:id", async (req, res, next) => {
   try {
+    req.body.user = req.body.user ? req.body.user : "Anonymous"
     req.body.item = req.params.id;
     const newComment = await Comment.create(req.body);
     res.status(201).json(newComment);
