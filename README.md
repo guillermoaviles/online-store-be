@@ -1,5 +1,5 @@
 # Project 3 - Dealio - Online Store App (Back-end)
-<div align="center">A online store app/server by Guillermo Aviles, Hiram Rodriguez, and Nghia Vo
+<div align="center">A online store app/server by <strong>Guillermo Aviles</strong>, <strong>Hiram Rodriguez</strong>, and <strong>Nghia (Nathan) Vo</strong>
 <br></br>
 <img src="https://user-images.githubusercontent.com/114704720/206938631-ff29447f-2f0c-4553-a77e-9738139ff8e2.png"/>
 </div>
@@ -103,5 +103,3 @@ router.post("/newComment/:id", async (req, res, next) => {
 + [What is Postman, and Why Should I Use It?](https://www.digitalcrafts.com/blog/student-blog-what-postman-and-why-use-it)
 + [Jullian Wallis - What Is VERCEL? Is It The Right Platform For Front-End Developers?](https://webo.digital/blog/what-is-vercel-is-it-the-right-platform-for-front-end-developers/)
 + [Whimsical - Used for the Req-Res Diagram](https://whimsical.com)
-+ [I'm an inline-style link](https://www.google.com)
-+ [I'm an inline-style link](https://www.google.com)
