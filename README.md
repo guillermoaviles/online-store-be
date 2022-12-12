@@ -46,8 +46,16 @@ Vercel is the most accessible platform to deploy websites. By connecting the ** 
 + AAU, I want to be able to delete information about an existing item in the database.
 
 ## Component Development
+Our main component includes:
++ Planning directory: to help with project development and planning.
++ Controllers directory: two separate file for managing our API request and responses.
++ Data directory: contains two file with already-made JSON data to test our localhost in the first phase of the project.
++ Seed directory: contains file to seed already-made JSON into localhost database.
++ Connection file: contain file to connect to MongoDB.
++ Models directory: contains two file that have schema properties and values.
 
 ## Project Management
+
 
 ## Code Snipet
 
