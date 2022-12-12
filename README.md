@@ -40,6 +40,10 @@ Vercel is the most accessible platform to deploy websites. By connecting the ** 
 </div>
 
 ## User Stories
++ AAU, I want to be able to add new information about an item into the database.
++ AAU, I want to be able to update the information on an existing item to the database.
++ AAU, I want to able to retrieve information about an item from the database.
++ AAU, I want to be able to delete information about an existing item in the database.
 
 ## Component Development
 
