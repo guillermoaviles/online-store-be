@@ -29,6 +29,15 @@ Postman is a great tool when trying to dissect RESTful APIs made by others or te
 Vercel is the most accessible platform to deploy websites. By connecting the ** your GitHub repository** to Vercel, you can simply deploy the main branch to Vercel domains — and it does all the heavy lifting for you. **(Julian Wallis)**
 
 ## Req-Res Diagram
+### Before
+<div align="center">
+<img src="https://media.git.generalassemb.ly/user/45455/files/26ab68b8-066a-4711-a262-38ef515aca04"/>
+</div>
+
+### After
+<div align="center">
+<img src="https://user-images.githubusercontent.com/114704720/206949148-8708de1d-0166-4e0d-ad93-df2835535fbe.png"/>
+</div>
 
 ## User Stories
 
@@ -47,6 +56,6 @@ Vercel is the most accessible platform to deploy websites. By connecting the ** 
 + [Intro to Mongo and Mongoose](https://git.generalassemb.ly/seir-ten3/intro-to-mongo-and-mongoose)
 + [What is Postman, and Why Should I Use It?](https://www.digitalcrafts.com/blog/student-blog-what-postman-and-why-use-it)
 + [Jullian Wallis - What Is VERCEL? Is It The Right Platform For Front-End Developers?](https://webo.digital/blog/what-is-vercel-is-it-the-right-platform-for-front-end-developers/)
-+ [I'm an inline-style link](https://www.google.com)
++ [Whimsical - Used for the Req-Res Diagram](https://whimsical.com)
 + [I'm an inline-style link](https://www.google.com)
 + [I'm an inline-style link](https://www.google.com)
