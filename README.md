@@ -1,4 +1,4 @@
-# Project 3 - Dealio - Online Store App (Back-end)
+# Project 3 - Online Store App - Dealio (Back-End)
 <div align="center">A online store app/server by <strong>Guillermo Aviles</strong>, <strong>Hiram Rodriguez</strong>, and <strong>Nghia (Nathan) Vo</strong>
 <br></br>
 <img src="https://user-images.githubusercontent.com/114704720/206938631-ff29447f-2f0c-4553-a77e-9738139ff8e2.png"/>
@@ -8,16 +8,16 @@
 
 The online store app would be the place where the users can freely buy any available items on the sites, sell an item by creating a new post, add a review/comment to an existing item. The app give the users the freedom to buy and sell without paying any fees or restrictions.
 
-+ This repository is the backend respository for the app.
-+ The backend is deployed on Heroky: [here](https://online-store.herokuapp.com/api/online-store/)
-+ The front end is deployed on Vercel: [here]()
-+ The associated front end repository can be found: [here](https://github.com/guillermoaviles/online-store-fe)
++ This repository is the back-end respository for the app.
++ The back-end is deployed on Heroky: [here](https://online-store.herokuapp.com/api/online-store/)
++ The front-end is deployed on Vercel: [here]()
++ The associated front-end repository can be found: [here](https://github.com/guillermoaviles/online-store-fe)
 
 ## Deployment
-The backend of our application is a MongoDB, Express and Node with two models that includes a schema for Item and for Comment. It follows RESTful architecture in naming and functionality of all available endpoints. Create, Read, Update, and Destroy (CRUD) was built in throughout the app. The backend composes the following technologies/platforms:
+The back-end of our application is a MongoDB, Express and Node with two models that includes a schema for Item and for Comment. It follows RESTful architecture in naming and functionality of all available endpoints. Create, Read, Update, and Destroy (CRUD) was built in throughout the app. The back-end composes the following technologies/platforms:
 
 ### Heroku: 
-Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting our apps to market. Heroku plays a crucial part in our backend server/app. 
+Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting our apps to market. Heroku plays a crucial part in our back-end server/app. 
 
 ### MongoDB Atlas: 
 MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. According to General Assembly, _"even though SQL databases have been around for much longer, NoSQL databases have gained in popularity in recent years as the amount of user-generated data on web applications has grown exponentially. NoSQL databases like MongoDB lend themselves well to rapid app development use cases such as coding sprints and Agile settings. Anytime you have large amounts of data with little or no structure, unknown requirements, or when data is increasing at a very high rate, a flexible and scaleable database like MongoDB would be an ideal choice."_
@@ -56,7 +56,7 @@ Our main component includes:
 + Issue MD: a text file so we can note existing but affecting the functionality of the app so we can address later. Or anything that we anticipated to be a problem in the future.
 
 ## Project Management
-The team followed the daily SCRUM protocols and met for a 5 to 10 minutes a day to discuss small wins, achievements, any blockers, unresolved issues, obstacles that we were encountering. We also met before the day end to discuss any working plans and small goals for the next days.As for the Git workflow, we follow the *'Feature Branch'* method where we have the inital code set-up in the main branch. Everyone who is working will branch out to dev branch to work and push up the code accordingly. Guillermo, who is our Git Manager, then reviewed the latest code with the team to validate the code. He then will submit a pull request and merged that PR to the dev branch. Once our code met MVP, he then merge code to main branch for deployment to Heroku. The team was committed to collabrate creatively and equally. We tried to be mindful of that and divided the work so that everyone at least working on something on both backend and front end.
+The team followed the daily SCRUM protocols and met for a 5 to 10 minutes a day to discuss small wins, achievements, any blockers, unresolved issues, obstacles that we were encountering. We also met before the day end to discuss any working plans and small goals for the next days.As for the Git workflow, we follow the *'Feature Branch'* method where we have the inital code set-up in the main branch. Everyone who is working will branch out to dev branch to work and push up the code accordingly. Guillermo, who is our Git Manager, then reviewed the latest code with the team to validate the code. He then will submit a pull request and merged that PR to the dev branch. Once our code met MVP, he then merge code to main branch for deployment to Heroku. The team was committed to collabrate creatively and equally. We tried to be mindful of that and divided the work so that everyone at least working on something on both back-end and front-end.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/114704720/206955919-a8dbd9d1-3a2c-4e1d-bb16-b626883ce46c.png"/>
