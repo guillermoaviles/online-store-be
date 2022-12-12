@@ -53,6 +53,7 @@ Our main component includes:
 + Seed directory: contains file to seed already-made JSON into localhost database.
 + Connection file: contain file to connect to MongoDB.
 + Models directory: contains two file that have schema properties and values.
++ Issue MD: a text file so we can note existing but affecting the functionality of the app so we can address later. Or anything that we anticipated to be a problem in the future.
 
 ## Project Management
 The team followed the daily SCRUM protocols and met for a 5 to 10 minutes a day to discuss small wins, achievements, any blockers, unresolved issues, obstacles that we were encountering. We also met before the day end to discuss any working plans and small goals for the next days.As for the Git workflow, we follow the *'Feature Branch'* method where we have the inital code set-up in the main branch. Everyone who is working will branch out to dev branch to work and push up the code accordingly. Guillermo, who is our Git Manager, then reviewed the latest code with the team to validate the code. He then will submit a pull request and merged that PR to the dev branch. Once our code met MVP, he then merge code to main branch for deployment to Heroku. The team was committed to collabrate creatively and equally. We tried to be mindful of that and divided the work so that everyone at least working on something on both backend and front end.
@@ -79,6 +80,20 @@ router.delete("/deleteItem/:id", async (req, res, next) => {
 ```
 
 ## Issues & Resolutions
+One of the issues we encountered during our project was when adding a new comment, we intended that if a user wanted to stayed anonymous, he/she could leave the 'name' field empty and it would show up automatically as 'Anonymous'. However, when we tested this out, it only left an empty string instead of 'Anonymous' as intended. We initially thought we had to modify our Comment Schema, but Hayk, who is one our Teaching Associates, suggested that we add the code below to the POST request. It then worked wonderfully. Thank you Hayk again.
+
+```
+router.post("/newComment/:id", async (req, res, next) => {
+  try {
+    req.body.user = req.body.user ? req.body.user : "Anonymous"
+    req.body.item = req.params.id;
+    const newComment = await Comment.create(req.body);
+    res.status(201).json(newComment);
+  } catch (err) {
+    next(err);
+  }
+});
+```
 
 ## Resources:
 
