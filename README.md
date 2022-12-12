@@ -61,7 +61,22 @@ The team followed the daily SCRUM protocols and met for a 5 to 10 minutes a day 
 <img src="https://user-images.githubusercontent.com/114704720/206955919-a8dbd9d1-3a2c-4e1d-bb16-b626883ce46c.png"/>
 </div>
 
-## Code Snipet
+## Code Snippet
+We are especially proud of this code because it allows us to make one single call in the front end when we delete an item, it will also find all the comments that associated item's ObjectId and delete them as well. This code makes our code DRY and still it achieves the functionality that we aim for.
+
+```
+router.delete("/deleteItem/:id", async (req, res, next) => {
+  try {
+    const deleteItem = await Item.findOneAndDelete({ _id: req.params.id })
+    const deleteComments = await Comment.deleteMany({item: req.params.id})
+    .then((item) => {
+      res.sendStatus(204)
+    })
+  } catch (err) {
+    next(err)
+  }
+});
+```
 
 ## Issues & Resolutions
 
