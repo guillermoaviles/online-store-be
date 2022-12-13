@@ -14,7 +14,7 @@ router.get("/comments", async (req, res, next) => {
 
 router.get("/comments/:id", async (req, res, next) => {
   try {
-    const comments = await Comment.find({item: req.params.id});
+    const comments = await Comment.find({ item: req.params.id });
     res.json(comments);
   } catch (err) {
     next(err);
@@ -37,9 +37,9 @@ router.delete("/deleteComment/:id", async (req, res, next) => {
     const deleteComment = await Comment.findOneAndDelete({
       _id: req.params.id,
     })
-    .then((item) => {
-      res.sendStatus(202)
-    })
+      .then((item) => {
+        res.sendStatus(202)
+      })
   } catch (err) {
     next(err);
   }

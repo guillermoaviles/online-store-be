@@ -40,9 +40,9 @@ router.put("/edit/:id", async (req, res, next) => {
         new: true,
       }
     )
-    .then((item) => {
-      res.sendStatus(202)
-    })
+      .then((item) => {
+        res.sendStatus(202)
+      })
   } catch (err) {
     next(err);
   }
@@ -51,10 +51,10 @@ router.put("/edit/:id", async (req, res, next) => {
 router.delete("/deleteItem/:id", async (req, res, next) => {
   try {
     const deleteItem = await Item.findOneAndDelete({ _id: req.params.id })
-    const deleteComments = await Comment.deleteMany({item: req.params.id})
-    .then((item) => {
-      res.sendStatus(204)
-    })
+    const deleteComments = await Comment.deleteMany({ item: req.params.id })
+      .then((item) => {
+        res.sendStatus(204)
+      })
   } catch (err) {
     next(err)
   }

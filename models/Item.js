@@ -1,8 +1,6 @@
 const mongoose = require('../db/connection');
 const Schema = mongoose.Schema;
 
-
-// Item Schema Model
 const itemSchema = new Schema(
     {
         title: String,

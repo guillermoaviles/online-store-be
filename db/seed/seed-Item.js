@@ -1,22 +1,3 @@
-// const Item = require('../../models/Item');
-// const Comment = require('../../models/Comment');
-
-
-// const itemRaw = require('../data/itemRaw.json');
-
-
-// Item.deleteMany({}, (err, items) => {
-//     Comment.deleteMany({}, (err, comments) => {
-//         itemRaw.forEach((item, id) => {
-//     Item.create(item, (err, newItem) => { 
-//             newItem.save()
-//             console.log('newItem', newItem)    
-
-//     } )
-// })
-//     })
-// } )
-
 const mongoose = require('./connection');
 
 const Item = require('../../models/Item');
@@ -28,6 +9,6 @@ Item.deleteMany({}).then(() => {
     })
 })
 
-    
+
 
 module.exports = mongoose
