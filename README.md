@@ -1,7 +1,7 @@
 # Project 3 - Online Store App - Dealio (Back-End)
 <div align="center">A online store app/server by <strong>Guillermo Aviles</strong>, <strong>Hiram Rodriguez</strong>, and <strong>Nghia (Nathan) Vo</strong>
 <br></br>
-<img src="https://user-images.githubusercontent.com/114704720/206938631-ff29447f-2f0c-4553-a77e-9738139ff8e2.png"/>
+<img src="https://i.imgur.com/Kl67sLX.gif"/>
 </div>
 
 ## Project Overview
