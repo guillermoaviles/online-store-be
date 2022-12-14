@@ -13,6 +13,74 @@ The online store app would be the place where the users can freely buy any avail
 + The front-end is deployed on Vercel: [here](https://online-store-fe-3vpd-b12pu7004-guillermoaviles.vercel.app/)
 + The associated front-end repository can be found: [here](https://github.com/guillermoaviles/online-store-fe)
 
+## About this API
+
+### Information
+This is a Open API — full CRUD method is available on resources. No authentication is required to access this API, and all resources are fully open and available.
+
+### Installation
+1. Clone this repository to your labs folder and change directory into it.
+2. Run `npm i` to download required dependencies.
+3. Run `node db/seeb/seed-Item.js` to seed file.
+4. Run `nodemon index.js` to run localhost
+
+### Resources Lists
+
+#### item(endpoint) - it will return a list of items in the database.
+GET - https://online-store.herokuapp.com/api/online-store/{endpoint}/
+```
+{
+        "_id": "63988bd9f91cde2357339ea3",
+        "title": "Roomba® 694 Robot Vacuum",
+        "description": "Robot vacuum with core cleaning features that allow for a complete clean. Thoughtful intelligence with iRobot OS software. Ideal for routine cleaning.",
+        "images": "https://cdn.media.amplience.net/i/irobot/R694020_1?fmt=auto&$pdp-img-desktop-retina-prd$&img404=404&v=1&locale=en-US,*",
+        "price": 179.99,
+        "__v": 0
+    }
+```
+#### comments(endpoint) - return you a list of all comments.
+GET - https://online-store.herokuapp.com/api/online-store/{endpoint}/
+
+```
+{
+        "_id": "63935496939d6b735fc9dcdf",
+        "user": "User",
+        "body": "Test",
+        "item": "6393544e4781b87afb2a5055",
+        "__v": 0
+    }
+```
+
+
+#### items(endpoint): return you the detailed information on a specific item.
+GET https://online-store.herokuapp.com/api/online-store/items/{_id}
+```
+"_id": "63988bd9f91cde2357339ea3",
+        "title": "Roomba® 694 Robot Vacuum",
+        "description": "Robot vacuum with core cleaning features that allow for a complete clean. Thoughtful intelligence with iRobot OS software. Ideal for routine cleaning.",
+        "images": "https://cdn.media.amplience.net/i/irobot/R694020_1?fmt=auto&$pdp-img-desktop-retina-prd$&img404=404&v=1&locale=en-US,*",
+        "price": 179.99,
+        "__v": 0
+```
+#### comments(endpoint): return you a list of comment about a specific item
+GET https://online-store.herokuapp.com/api/online-store/comments/{item}
+```
+{
+        "_id": "6399e28d4ed9197ba2809e6f",
+        "user": "Waatch_Freak",
+        "body": "Camped outside the Swatch store for a day and a half to get one of these only to find out they were out of stock. Luckily I was able to get my hand on one over here. Love it!",
+        "item": "6399da674ed9197ba2809e15",
+        "__v": 0
+    },
+    {
+        "_id": "6399e2b84ed9197ba2809e73",
+        "user": "Sandy",
+        "body": "On my Christmas wishlist",
+        "item": "6399da674ed9197ba2809e15",
+        "__v": 0
+    }
+```
+
 ## Deployment
 The back-end of our application is a MongoDB, Express and Node with two models that includes a schema for Item and for Comment. It follows RESTful architecture in naming and functionality of all available endpoints. Create, Read, Update, and Destroy (CRUD) was built in throughout the app. The back-end composes the following technologies/platforms:
 
